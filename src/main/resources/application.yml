@@ -28,9 +28,9 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://microservices-git-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com/
+      defaultZone: https://microservices-git-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com/eureka/
   instance:
-    hostname: localhost
+    hostname: https://microservices-git-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com
 
        
 
