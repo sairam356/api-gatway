@@ -6,19 +6,19 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: DEBIT-SERVICE
+      - id: debit-service
         uri: lb://DEBIT-SERVICE
         predicates:
         - Path=/debit/**
-      - id: CREDIT-SERVICE
+      - id: credit-service
         uri: lb://CREDIT-SERVICE
         predicates:
         - Path=/credit/**
-      - id: ADMIN-SERVICE
+      - id: admin-service
         uri: lb://ADMIN-SERVICE
         predicates:
         - Path=/admin/**
-      - id: USER-SERVICE
+      - id: user-service
         uri: lb://USER-SERVICE
         predicates:
         - Path=/users/**
