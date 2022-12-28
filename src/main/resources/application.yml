@@ -30,7 +30,6 @@ eureka:
     service-url:
       defaultZone: https://microservices-git-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com/eureka/
   instance:
-    hostname: localhost
     preferIpAddress: true
        
 
