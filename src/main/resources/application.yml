@@ -6,12 +6,12 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: debit-service-test
+      - id:  debit-service
         uri: lb://DEBIT-SERVICE
         predicates:
         - Path=/debit/**
       - id: credit-service
-        uri: lb://CREDIT-SERVICE
+        uri: https://credit-service-test-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com
         predicates:
         - Path=/credit/**
       - id: admin-service
