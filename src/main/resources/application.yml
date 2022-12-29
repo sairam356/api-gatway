@@ -6,7 +6,7 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: debit-service
+      - id: debit-service-test
         uri: lb://DEBIT-SERVICE
         predicates:
         - Path=/debit/**
