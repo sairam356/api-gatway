@@ -7,7 +7,7 @@ spring:
     gateway:
       routes:
       - id:  debit-service
-        uri: lb://DEBIT-SERVICE
+        uri: https://debit-service-test-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com
         predicates:
         - Path=/debit/**
       - id: credit-service
@@ -15,11 +15,11 @@ spring:
         predicates:
         - Path=/credit/**
       - id: admin-service
-        uri: lb://ADMIN-SERVICE
+        uri: https://admin-service-test-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com
         predicates:
         - Path=/admin/**
       - id: user-service
-        uri: lb://USER-SERVICE
+        uri: https://user-service-test-kushalbajji-dev.apps.sandbox.x8i5.p1.openshiftapps.com
         predicates:
         - Path=/users/**
 
